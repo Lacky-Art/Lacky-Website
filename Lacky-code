@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LACKY | Berlin Expressionism</title>
+  <style>
+    /* --- Grunddesign --- */
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #0b0b0b;
+      color: #f0f0f0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    a { color: #e22; text-decoration: none; }
+    a:hover { color: #fff; }
+
+    header {
+      background: url('DEIN-BILD.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 5rem;
+      letter-spacing: 0.2rem;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 1rem auto 2rem;
+    }
+
+    .btn {
+      border: 2px solid #fff;
+      padding: 0.8rem 1.5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    section {
+      padding: 5rem 10%;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      color: #e22;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #222;
+      transition: transform 0.4s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      border-color: #e22;
+    }
+
+    .bio, .manifest {
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media(max-width:768px){
+      header h1 { font-size: 3rem; }
+      h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Startseite -->
+  <header>
+    <h1>LACKY</h1>
+    <p>Berlin Expressionism Reborn<br>
+    Wild. Emotional. Brutal.<br>
+    Kunst, die keine Antworten gibt – sondern Wunden zeigt.</p>
+    <a href="#gallery" class="btn">Enter Gallery</a>
+  </header>
+
+  <!-- Galerie -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="bild1.jpg" alt="Artwork 1">
+      <img src="bild2.jpg" alt="Artwork 2">
+      <img src="bild3.jpg" alt="Artwork 3">
+      <img src="bild4.jpg" alt="Artwork 4">
+    </div>
+  </section>
+
+  <!-- Biografie -->
+  <section id="bio">
+    <h2>About Lacky</h2>
+    <div class="bio">
+      <p><strong>Lacky</strong> (*1998, Berlin) ist Teil einer neuen Generation expressionistischer Maler, die das rohe, emotionale Erbe der Stadt in die Gegenwart tragen. Seine Werke sind wild, unmittelbar und kompromisslos ehrlich – sie sprechen in Gesten, nicht in Worten.</p>
+      <p>Entdeckt vom renommierten Künstler <strong>Strawalde</strong>, entwickelte Lacky einen Stil, der das Erbe des deutschen Expressionismus mit der Dringlichkeit der urbanen Gegenwart verschmilzt. Jede Leinwand ist für ihn ein körperlicher Akt – ein Aufschrei in Farbe, eine Spur des Unkontrollierbaren.</p>
+      <p>Seine Arbeiten wurden in Berliner Off-Spaces, internationalen Gruppenausstellungen und alternativen Kunstfestivals gezeigt. Lacky lebt und arbeitet in Berlin.</p>
+    </div>
+  </section>
+
+  <!-- Manifest -->
+  <section id="manifest">
+    <h2>Manifest</h2>
+    <div class="manifest">
+      <p>Ich male nicht, um zu gefallen.<br>
+      Ich male, weil Farbe lauter schreit als Worte.<br>
+      Jede Leinwand ist ein Kampf – mit der Welt, mit mir selbst, mit der Illusion von Kontrolle.<br>
+      Expressionismus ist kein Stil.<br>
+      Es ist eine Entscheidung, sich nicht zu verstecken.</p>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="bio">
+      <p>📩 <a href="mailto:contact@lacky.art">contact@lacky.art</a><br>
+         📍 Berlin, Germany<br>
+         📸 Instagram: <a href="#">@lacky.art</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 LACKY. All rights reserved.  
+  </footer>
+
+</body>
+</html>
